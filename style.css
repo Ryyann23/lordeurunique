@@ -338,6 +338,8 @@ span{
     background: url(img/banner-bg.png) no-repeat;
     background-size:cover;
     background-position:center;
+    margin-right: 350px;
+    margin-left: 350px;
 }
 .banner .content{
     max-width: 40rem;
