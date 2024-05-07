@@ -214,6 +214,8 @@ span{
     align-items: center;
     flex-wrap: wrap;
     gap:2rem;
+    margin-right: 300px;
+    margin-left: 300px;
 }
 .about .img{
     flex: 1 1 42rem;
