@@ -263,7 +263,13 @@ a {
   justify-content: space-evenly;
   align-items: center;
 }
-
+#price-origin{
+  color: #666;
+  font-size: 21px;
+  text-decoration: line-through;
+  margin-left: -100px;
+  margin-bottom: -5px;
+}
 .price__title {
   font-size: var(--big-font-size);
   color: var(--black-color);
