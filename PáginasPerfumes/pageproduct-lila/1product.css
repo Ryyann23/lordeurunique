@@ -84,7 +84,6 @@
 .header #menu-btn{
   display: none;
 }
-
 /*===== BASE =====*/
 *, ::before, ::after {
   box-sizing: border-box;
@@ -111,68 +110,6 @@ ul {
 a {
   text-decoration: none;
 }
-
-/*===== LAYOUT =====*/
-.grid {
-  max-width: 1200px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: var(--z-fixed);
-  background-color: var(--white-color);
-}
-
-/*===== HEADER & NAV =====*/
-.nav {
-  height: var(--header-height);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@media screen and (max-width: 968px) {
-  .nav__menu {
-    position: fixed;
-    left: -100%;
-    top: var(--header-height);
-    background-color: var(--white-color);
-    width: 80%;
-    height: 100%;
-    padding: 2rem;
-    z-index: var(--z-fixed);
-    transition: .3s;
-  }
-}
-
-.nav__list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-}
-
-.nav__item {
-  font-weight: var(--font-bold);
-}
-
-.nav__link {
-  color: var(--black-color);
-}
-
-.nav__toggle {
-  cursor: pointer;
-}
-
-/* Show menu */
-.show {
-  left: 0;
-}
-
 /*===== HOME =====*/
 .home {
   height: 100vh;
@@ -180,6 +117,8 @@ a {
   row-gap: 3.5rem;
   grid-template-rows: repeat(2, max-content);
   overflow: hidden;
+  margin-top: -65px;
+  padding-top: 50px;
 }
 
 /*===== Sneaker =====*/
