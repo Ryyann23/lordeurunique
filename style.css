@@ -285,6 +285,7 @@ span{
     background: #fff;
     border: 0.2rem solid #222;
     box-shadow:0 0.5rem 1rem rgba(0,0,0,0.1);
+    border-radius: 6px;
 }
 .shop .box-container .box:hover .img img{
     transform:scale(1.1);
