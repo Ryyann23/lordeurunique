@@ -1,39 +1,37 @@
-/*----- MENU -----*/
-const showMenu = (toggleId,navId) =>{
-    const toggle = document.getElementById(toggleId),
-    nav = document.getElementById(navId)
+// 'carrossel script'
+const slider = document.querySelectorAll('.slider');
+const btnPrev = document.getElementById('prev');
+const btnNext = document.getElementById('next');
 
-    if(toggle && nav){
-        toggle.addEventListener('click', ()=>{
-            nav.classList.toggle('show')
-        })
-    }
-}
-showMenu('nav-toggle','nav-menu')
+let currentSlide = 0;
 
-/*----- CAMBIO COLORS -----*/
-const sizes = document.querySelectorAll('.size__tallas');
-const colors = document.querySelectorAll('.sneaker__color');
-const sneaker = document.querySelectorAll('.sneaker__img');
-
-function changeSize(){
-    sizes.forEach(size => size.classList.remove('active'));
-    this.classList.add('active');
+function hideSlider() {
+  slider.forEach(item => item.classList.remove('on'))
 }
 
-function changeColor(){
-    let primary = this.getAttribute('primary');
-    let color = this.getAttribute('color');
-    let sneakerColor = document.querySelector(`.sneaker__img[color="${color}"]`);
-
-    colors.forEach(c => c.classList.remove('active'));
-    this.classList.add('active');
-
-    document.documentElement.style.setProperty('--primary', primary);
-
-    sneaker.forEach(s => s.classList.remove('shows'));
-    sneakerColor.classList.add('shows')
+function showSlider() {
+  slider[currentSlide].classList.add('on')
 }
 
-sizes.forEach(size => size.addEventListener('click', changeSize));
-colors.forEach(c => c.addEventListener('click', changeColor));
+function nextSlider() {
+  hideSlider()
+  if(currentSlide === slider.length -1) {
+    currentSlide = 0
+  } else {
+    currentSlide++
+  }
+  showSlider()
+}
+
+function prevSlider() {
+  hideSlider()
+  if(currentSlide === 0) {
+    currentSlide = slider.length -1
+  } else {
+    currentSlide--
+  }
+  showSlider()
+}
+
+btnNext.addEventListener('click', nextSlider)
+btnPrev.addEventListener('click', prevSlider)
