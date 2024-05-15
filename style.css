@@ -1,7 +1,15 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap'); */
-@font-face {
-    font-family: Roboto;
-    src: url(style/fonts/Roboto-Regular.ttf);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --header-height: 3.5rem;
+  /*===== Font and typography =====*/
+  --body-font: 'Roboto', sans-serif;
+  --biggest-font-size: 1.5rem;
+  --big-font-size: 1.5rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-bold: 700;
 }
 body{
     font-family: Roboto;
@@ -82,27 +90,29 @@ span{
     align-items: center;
     justify-content: space-between;
     padding:1.5rem 9%;
-}
-.header .logo{
-    font-size: 2.5rem;
+    height: 65px;
+    font-family: 'Roboto', sans-serif;
+  }
+  .header .logo{
+    font-size: 25px;
     color: #222;
     font-weight: bolder;
-}
-.header .logo i{
+  }
+  .header .logo i{
     color: #222;
-}
-.header .navbar a{
+  }
+  .header .navbar a{
     margin: 0 1.5rem;
     font-size: 17.5px;
     color: #222;
     padding-left: 20px;
     padding-right: 20px;
-}
-.header .navbar a:hover{
+  }
+  .header .navbar a:hover{
     color: #222;
-}
-.header .icons div,
-.header .icons a{
+  }
+  .header .icons div,
+  .header .icons a{
     height: 4.5rem;
     width:4.5rem;
     line-height: 4.5rem;
@@ -113,15 +123,15 @@ span{
     margin-left: .3rem;
     text-align: center;
     cursor: pointer;
-}
-.header .icons a:hover,
-.header .icons div:hover{
+  }
+  .header .icons a:hover,
+  .header .icons div:hover{
     background: #222;
     color: #fff;
-}
-.header #menu-btn{
+  }
+  .header #menu-btn{
     display: none;
-}
+  }
 
 .home{
     position: relative;

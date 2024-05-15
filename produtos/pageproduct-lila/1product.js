@@ -1,4 +1,4 @@
-// 'carrossel script'
+// '---carrossel script---'
 const slider = document.querySelectorAll('.slider');
 const btnPrev = document.getElementById('prev');
 const btnNext = document.getElementById('next');
