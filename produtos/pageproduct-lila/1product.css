@@ -53,23 +53,16 @@
 .header .navbar a:hover{
   color: #222;
 }
-.header .icons div,
-.header .icons a{
-  height: 4.5rem;
-  width:4.5rem;
-  line-height: 4.5rem;
-  border-radius: .5rem;
-  background: #eee;
-  font-size: 1.7rem;
-  color: #222;
-  margin-left: .3rem;
-  text-align: center;
-  cursor: pointer;
+.icons{
+  width: 80px;
+  height: 70px;
+  background-image: url(../../style/img/cart-icon.png);
+  background-size: contain;
+  transition: 0.75s;
 }
-.header .icons a:hover,
-.header .icons div:hover{
-  background: #222;
-  color: #fff;
+.icons:hover{
+  background-image: url(../../style/img/cart-icon-click.png);
+  transition: 0.75s;
 }
 .header #menu-btn{
   display: none;

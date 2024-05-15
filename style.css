@@ -93,46 +93,35 @@ span{
     height: 65px;
     font-family: 'Roboto', sans-serif;
   }
-  .header .logo{
+.header .logo{
     font-size: 25px;
     color: #222;
     font-weight: bolder;
-  }
-  .header .logo i{
+}
+.header .logo i{
     color: #222;
-  }
-  .header .navbar a{
+}
+.header .navbar a{
     margin: 0 1.5rem;
     font-size: 17.5px;
     color: #222;
     padding-left: 20px;
     padding-right: 20px;
-  }
-  .header .navbar a:hover{
+}
+.header .navbar a:hover{
     color: #222;
   }
-  .header .icons div,
-  .header .icons a{
-    height: 4.5rem;
-    width:4.5rem;
-    line-height: 4.5rem;
-    border-radius: .5rem;
-    background: #eee;
-    font-size: 1.7rem;
-    color: #222;
-    margin-left: .3rem;
-    text-align: center;
-    cursor: pointer;
-  }
-  .header .icons a:hover,
-  .header .icons div:hover{
-    background: #222;
-    color: #fff;
-  }
-  .header #menu-btn{
-    display: none;
-  }
-
+.icons{
+    width: 80px;
+    height: 70px;
+    background-image: url(style/img/cart-icon.png);
+    background-size: contain;
+    transition: 0.75s;
+}
+.icons:hover{
+    background-image: url(style/img/cart-icon-click.png);
+    transition: 0.75s;
+}
 .home{
     position: relative;
     padding:0;
