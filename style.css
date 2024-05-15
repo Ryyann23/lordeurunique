@@ -111,14 +111,14 @@ span{
 .header .navbar a:hover{
     color: #222;
   }
-.icons{
+.cart-icon{
     width: 80px;
     height: 70px;
     background-image: url(style/img/cart-icon.png);
     background-size: contain;
     transition: 0.75s;
 }
-.icons:hover{
+.cart-icon:hover{
     background-image: url(style/img/cart-icon-click.png);
     transition: 0.75s;
 }
