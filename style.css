@@ -224,6 +224,7 @@ span{
     margin-right: 300px;
     margin-left: 300px;
     margin-bottom: 75px;
+    margin-top: -15px;
 }
 .about .img{
     flex: 1 1 42rem;
