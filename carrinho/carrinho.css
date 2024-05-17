@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+:root {
+  --header-height: 3.5rem;
+  /*===== Font and typography =====*/
+  --body-font: 'Roboto', sans-serif;
+  --biggest-font-size: 1.5rem;
+  --big-font-size: 1.5rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-bold: 700;
+}
+body{
+    font-family: Roboto;
+}
+*{
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar{
+    width:1rem;
+}
+html::-webkit-scrollbar-thumb{
+    background: #222;
+}
+span{
+    color: #222;
+}
+
+.heading{
+    text-align: center;
+    color: #222;
+    margin-bottom: 3rem;
+    font-size: 4rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:1rem;
+    padding:1rem 3rem;
+    color:#222;
+    font-size:1.7rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.7);
+    cursor: pointer;
+}
+.btn:hover{
+    letter-spacing: .1rem;
+    background: #222;
+    color: #fff;
+}
+
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-4rem) scale(0.4);
+    }
+}
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1.5rem 9%;
+    height: 65px;
+    font-family: 'Roboto', sans-serif;
+  }
+.header .logo{
+    font-size: 25px;
+    color: #222;
+    font-weight: bolder;
+}
+.header .logo i{
+    color: #222;
+}
+.header .navbar a{
+    margin: 0 1.5rem;
+    font-size: 17.5px;
+    color: #222;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.header .navbar a:hover{
+    color: #222;
+  }
+.icons{
+    width: 80px;
+    height: 70px;
+    background-image: url(../../style/img/cart-icon.png);
+    background-size: contain;
+    transition: 0.75s;
+    cursor: pointer;
+}
+.icons:hover{
+    background-image: url(../../style/img/cart-icon-click.png);
+    transition: 0.75s;
+}
+.header #menu-btn{
+    display: none;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+.shop{
+    margin-top: 2rem;
+}
+.product-content{
+    margin-left: 16%;
+    gap: 15rem;
+    display:flex;
+    align-items: center;
+    grid-template-rows:auto;
+}
+.product-box{
+    position: relative;
+    width: 200px;
+    margin-top: 80px;
+}
+.product-box:hover{
+    padding: 20px;
+    border: 1px solid black;
+    transition: o.4s;
+}
+.product-img{
+    background: whitesmoke;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+.product-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.price{
+    font-weight: 530;
+    font-size: 1.3rem;
+    color: #222;
+}
+/*icon add-cart*/
+.product-box a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.5rem;
+    background: transparent;
+    color: #222;
+    padding: 15px;
+    cursor: pointer;
+}
+.product-box a:hover{
+    background: #222;
+    color: #fff;
+}
+/*Carrinho*/
+.cart{
+    padding:3rem 9%;
+}
+.cart .section-title{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.cart-img{
+    background: #fff;
+    width: 30%;
+    height: auto;
+    margin-bottom: 0.5rem;
+    width: 120px;
+}
+.cart-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-head-item{
+    text-align: start;
+    border-bottom: 1px solid #222;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.second-collumn{
+    width: 50%;
+}
+.third-collumn{
+    width: 5%;
+}
+.cart-product td{
+    padding: 8px 0;
+}
+.product-identification{
+    display: flex;
+    align-items: center;
+}
+.cart-product-title{
+    margin-left: 16px;
+    font-size: 18px;
+}
+.cart-price{
+   color: #222;
+}
+.product-quantity{
+    width: 48px;
+    height: 34px;
+    border-radius: 6px;
+    border: 2px solid #222;
+    text-align: center;
+}
+button{
+    margin-left: 12px;
+    padding: 10px 5px;
+    font-size: 2rem;
+    transition: o.4s;
+    background-color: transparent;
+}
+

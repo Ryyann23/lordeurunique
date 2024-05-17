@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="carrinho.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Carrinho</title>
+    </head>
+    <body>
+        <!-- 'NAV LIST' -->
+        <section id="header" class="header">
+            <a href="#" class="logo"> L'odeur Unique</a>
+            <nav class="navbar">
+                <a href="../index.html">Início</a>
+                <a href="../index.html">Sobre</a>
+                   <a href="#product-id">Produtos</a>
+                <a href="../index.html">Contato</a>
+            </nav>
+            <div class="icons">
+                <div id="menu-btn" ></div>
+                <a href="#cart-id" ></a>
+            </div>
+        </section>
+
+        <section class="product-container">
+            <h2 class="section-title" id="product-id">Produtos</h2>
+            <!-- Conteúdo -->
+            <div class="product-content">
+                <!-- 1 -->
+                <div class="product-box">
+                    <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
+                    <h2 class="product-title">LA NUIT TRÉSOR</h2>
+                    <span class="price">R$298,00</span>
+                    <a class="fas fa-shopping-cart"></a>
+                </div>
+                <!-- 2 -->
+                <div class="product-box">
+                    <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
+                    <h2 class="product-title">LA NUIT TRÉSOR</h2>
+                    <span class="price">R$298,00</span>
+                    <a class="fas fa-shopping-cart"></a>
+                </div>
+                <!-- 3 -->
+                <div class="product-box">
+                    <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
+                    <h2 class="product-title">LA NUIT TRÉSOR</h2>
+                    <span class="price">R$298,00</span>
+                    <a class="fas fa-shopping-cart"></a>
+                </div>
+            </div>
+            <div class="product-content">
+                <!-- 4 -->
+                <div class="product-box">
+                    <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
+                    <h2 class="product-title">LA NUIT TRÉSOR</h2>
+                    <span class="price">R$298,00</span>
+                    <a class="fas fa-shopping-cart"></a>
+                </div>
+                <!-- 5 -->
+                <div class="product-box">
+                    <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
+                    <h2 class="product-title">LA NUIT TRÉSOR</h2>
+                    <span class="price">R$298,00</span>
+                    <a class="fas fa-shopping-cart"></a>
+                </div>
+                <!-- 6 -->
+                <div class="product-box">
+                    <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
+                    <h2 class="product-title">LA NUIT TRÉSOR</h2>
+                    <span class="price">R$298,00</span>
+                    <a class="fas fa-shopping-cart"></a>
+                </div>
+            </div>
+                    
+        </section>
+        <!-- Carrinho -->
+        <section class="cart" id="cart-id">
+            <h2 class="section-title">Carrinho</h2>
+            <!-- Conteúdo -->
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th class="table-head-item first-collumn">Produtos</th>
+                        <th class="table-head-item second-collumn">Preço</th>
+                        <th class="table-head-item third-collumn">Quantidade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="cart-product">
+                        <td class="product-identification">
+                            <img class="cart-img" decoding="async" src="style/img/perfume-teste.webp" alt="">
+                            <strong class="cart-product-title">LA NUIT TRÉSOR</strong>
+                        </td>
+                        <td>
+                            <span class="cart-price">R$298,00</span>
+                        </td>
+                        <td>
+                            <input class="product-quantity" type="number" value="1" min="0" max="10" maxlength="2" onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                            <button type="button" class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr class="cart-product">
+                        <td class="product-identification">
+                            <img class="cart-img" decoding="async" src="style/img/perfume-teste.webp" alt="">
+                            <strong class="cart-product-title">LA NUIT TRÉSOR</strong>
+                        </td>
+                        <td>
+                            <span class="cart-price">R$298,00</span>
+                        </td>
+                        <td>
+                            <input class="product-quantity" type="number" value="1" min="0" max="10" maxlength="2" onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                            <button type="button" class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+                    <tr class="cart-product">
+                        <td class="product-identification">
+                            <img class="cart-img" decoding="async" src="style/img/perfume-teste.webp" alt="">
+                            <strong class="cart-product-title">LA NUIT TRÉSOR</strong>
+                        </td>
+                        <td>
+                            <span class="cart-price">R$298,00</span>
+                        </td>
+                        <td>
+                            <input class="product-quantity" type="number" value="1" min="0" max="10" maxlength="2" onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                            <button type="button" class="fa-solid fa-trash"></i>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <strong>Total</strong>
+                            <span>R$298,00</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button type="button">Comprar</button>
+        </section>
+    </body>
+</html>
