@@ -13,15 +13,6 @@
   --font-bold: 700;
 }
 
-@media screen and (min-width: 968px) {
-  :root {
-    --biggest-font-size: 3.25rem;
-    --big-font-size: 2.25rem;
-    --normal-font-size: 1rem;
-    --smaller-font-size: .813rem;
-  }
-}
-
 /* 'NAV LIST' */
 .header {
   position: sticky;
@@ -438,5 +429,19 @@ main {
   .grid {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (max-width: 1080px) {
+  :root {
+    --biggest-font-size: 3.25rem;
+    --big-font-size: 2.25rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: .813rem;
+  }
+  .header{
+    display: none;
+  }
+  main{
+    display: grid;
   }
 }
