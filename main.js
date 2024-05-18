@@ -1,27 +1,37 @@
-let menu = document.querySelector('#menu-btn');
-let navbar = document.querySelector('.header .navbar');
+// 'carrossel script'
+const slider = document.querySelectorAll('.slider');
+const btnPrev = document.getElementById('prev');
+const btnNext = document.getElementById('next');
 
-menu.onclick = () => {
-    menu.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
+let currentSlide = 0;
+
+function hideSlider() {
+    slider.forEach(item => item.classList.remove('on'))
 }
 
-window.onsroll = () => {
-    menu.classList.remove('fa-times');
-    navbar.classList.remove('active');
+function showSlider() {
+    slider[currentSlide].classList.add('on')
 }
 
-let slides = document.querySelectorAll('.home .slide');
-let index = 0;
-
-function next() {
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
+function nextSlider() {
+    hideSlider()
+    if (currentSlide === slider.length - 1) {
+        currentSlide = 0
+    } else {
+        currentSlide++
+    }
+    showSlider()
 }
 
-function prev() {
-    slides[index].classList.remove('active');
-    index = (index - 1 + slides.length) % slides.length;
-    slides[index].classList.add('active');
+function prevSlider() {
+    hideSlider()
+    if (currentSlide === 0) {
+        currentSlide = slider.length - 1
+    } else {
+        currentSlide--
+    }
+    showSlider()
 }
+
+btnNext.addEventListener('click', nextSlider)
+btnPrev.addEventListener('click', prevSlider)
