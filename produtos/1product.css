@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
 :root {
   --header-height: 3.5rem;
   /*===== Font and typography =====*/
@@ -11,6 +12,7 @@
   --font-medium: 500;
   --font-bold: 700;
 }
+
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 3.25rem;
@@ -19,56 +21,67 @@
     --smaller-font-size: .813rem;
   }
 }
-  /* 'NAV LIST' */
-.header{
+
+/* 'NAV LIST' */
+.header {
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
-  background:#fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:1.5rem 9%;
+  padding: 1.5rem 9%;
   height: 65px;
   font-family: 'Roboto', sans-serif;
 }
-.header .logo{
+
+.header .logo {
   font-size: 25px;
   color: #222;
   font-weight: bolder;
 }
-.header .logo i{
+
+.header .logo i {
   color: #222;
 }
-.header .navbar a{
+
+.header .navbar a {
   margin: 0 1.5rem;
   font-size: 17.5px;
   color: #222;
   padding-left: 15px;
   padding-right: 15px;
 }
-.header .navbar a:hover{
+
+.header .navbar a:hover {
   color: #222;
 }
-.icons{
+
+.icons {
   width: 80px;
   height: 70px;
   background-image: url(../../style/img/cart-icon.png);
   background-size: contain;
   transition: 0.75s;
 }
-.icons:hover{
+
+.icons:hover {
   background-image: url(../../style/img/cart-icon-click.png);
   transition: 0.75s;
 }
-.header #menu-btn{
+
+.header #menu-btn {
   display: none;
 }
+
 /*===== BASE =====*/
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -80,7 +93,10 @@ body {
   color: black;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -93,6 +109,7 @@ ul {
 a {
   text-decoration: none;
 }
+
 /*===== HOME =====*/
 .home {
   height: 100vh;
@@ -103,11 +120,13 @@ a {
   margin-top: -65px;
   padding-top: 50px;
 }
-main{
+
+main {
   display: flex;
 }
+
 /* 'Carrossel' */
-.box-slider{
+.box-slider {
   width: 600px;
   height: 450px;
   margin-top: -20px;
@@ -116,14 +135,16 @@ main{
   align-items: center;
   gap: 1.5rem;
 }
-.slid-img{
+
+.slid-img {
   width: 400px;
   display: flex;
   position: relative;
   justify-content: center;
   align-items: center;
 }
-.slider{
+
+.slider {
   opacity: 0;
   transition: opacity .2s;
   width: 400px;
@@ -131,22 +152,27 @@ main{
   position: absolute;
   border-radius: 12px;
 }
-.on{
+
+.on {
   opacity: 1;
 }
-.b-crsl{
+
+.b-crsl {
   background: transparent;
   border-style: none;
   position: relative;
   cursor: pointer;
 }
-.b-crsl img{
+
+.b-crsl img {
   width: 70px;
   height: 70px;
 }
-#next{
+
+#next {
   transform: rotate(180deg);
 }
+
 /*===== Sneaker =====*/
 .sneaker {
   display: flex;
@@ -223,7 +249,8 @@ main{
   padding: .5rem;
   border-radius: .25rem;
 }
-#number-qty{
+
+#number-qty {
   background-color: transparent;
   padding: 3px;
   width: 96px;
@@ -249,13 +276,15 @@ main{
   justify-content: space-evenly;
   align-items: center;
 }
-#price-origin{
+
+#price-origin {
   color: #666;
   font-size: 21px;
   text-decoration: line-through;
   margin-left: -100px;
   margin-bottom: -5px;
 }
+
 .price__title {
   font-size: var(--big-font-size);
   color: black;
@@ -275,19 +304,24 @@ main{
   .home {
     row-gap: 1.5rem;
   }
+
   .sneaker__figure {
     width: 210px;
     height: 210px;
   }
+
   .sneaker img {
     width: 230px;
   }
+
   .sneaker__colors {
     right: 1%;
   }
+
   .price__title {
     font-size: var(--normal-font-size);
   }
+
   .price__button {
     padding: 1.25rem 2rem;
   }
@@ -308,18 +342,23 @@ main{
     column-gap: 6rem;
     row-gap: 0;
   }
+
   .sneaker {
     margin-top: 0;
   }
+
   .sneaker__colors {
     right: -10%;
   }
+
   .sneaker__img {
     left: -6%;
   }
+
   .actions {
     margin-bottom: 3rem;
   }
+
   .price {
     position: initial;
     background-color: initial;
@@ -327,6 +366,7 @@ main{
     box-shadow: none;
     padding: 0;
   }
+
   .price__title {
     color: black;
     font-weight: var(--font-medium);
@@ -338,43 +378,55 @@ main{
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
+
   .nav__list {
     flex-direction: row;
     column-gap: 3rem;
   }
+
   .nav__toggle {
     display: none;
   }
+
   .sneaker {
     margin: 0;
   }
+
   .sneaker__figure {
     width: 430px;
     height: 430px;
   }
+
   .sneaker__img {
     width: 550px;
     top: -8%;
   }
+
   .sneaker__colors {
     right: initial;
     bottom: -3rem;
   }
+
   .sneaker__colors span {
     display: inline-block;
   }
+
   .info {
     align-self: center;
   }
+
   .data {
     margin-bottom: 2.5rem;
   }
+
   .data__subtitle {
     font-size: 1.5rem;
   }
+
   .data__title {
     margin-bottom: 1rem;
   }
+
   .size__tallas {
     width: 34px;
     height: 34px;
