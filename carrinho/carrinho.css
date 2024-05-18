@@ -49,33 +49,12 @@ html::-webkit-scrollbar-thumb {
     background: #222;
 }
 
-span {
-    color: #222;
-}
-
 .heading {
     text-align: center;
     color: #222;
     margin-bottom: 3rem;
     font-size: 4rem;
 }
-
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 1rem 3rem;
-    color: #222;
-    font-size: 1.7rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
-    cursor: pointer;
-}
-
-.btn:hover {
-    letter-spacing: .1rem;
-    background: #222;
-    color: #fff;
-}
-
 
 @keyframes fadeIn {
     0% {
@@ -136,10 +115,6 @@ span {
     transition: 0.75s;
 }
 
-.header #menu-btn {
-    display: none;
-}
-
 .section-title {
     font-size: 3rem;
     font-weight: 600;
@@ -148,16 +123,13 @@ span {
     margin-bottom: 2rem;
 }
 
-.shop {
-    margin-top: 2rem;
-}
-
 .product-content {
-    margin-left: 16%;
+    width: 100%;
     gap: 15rem;
     display: flex;
     align-items: center;
-    grid-template-rows: auto;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
 }
 
 .product-box {
@@ -187,9 +159,10 @@ span {
 }
 
 .price {
-    font-weight: 530;
+    font-weight: 800;
     font-size: 1.3rem;
-    color: #222;
+    font-weight: bolder;
+    color: #000;
 }
 
 /*icon add-cart*/
@@ -245,7 +218,7 @@ span {
 }
 
 .third-collumn {
-    width: 5%;
+    width: 10%;
 }
 
 .cart-product td {
@@ -263,21 +236,64 @@ span {
 }
 
 .cart-price {
-    color: #222;
+    width: 48px;
+    height: 34px;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: #000;
 }
 
 .product-quantity {
     width: 48px;
     height: 34px;
     border-radius: 6px;
-    border: 2px solid #222;
+    border: 2px solid #000;
     text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 
-button {
+/* ICON REMOVER */
+td button {
     margin-left: 12px;
-    padding: 10px 5px;
+    padding: 10px 10px;
     font-size: 2rem;
     transition: o.4s;
     background-color: transparent;
+    cursor: pointer;
+}
+
+td button:hover {
+    color: #fff;
+    background-color: #222;
+    border-radius: 6px;
+}
+
+.total-price {
+    border-top: 1px solid #000;
+    text-align: end;
+    padding: 6px 16px 0 0;
+    font-size: 18px;
+}
+
+.total-price strong {
+    margin-right: 12px;
+}
+
+.total-price span {
+    font-weight: bolder;
+    color: #000;
+}
+
+.purchase {
+    display: flex;
+    margin: 24px auto 0;
+    background-color: #000;
+    color: #fff;
+    border-radius: 6px;
+    padding: 16px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
 }
