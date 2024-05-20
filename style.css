@@ -1,18 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
-:root {
-    --header-height: 3.5rem;
-    /*===== Font and typography =====*/
-    --body-font: 'Roboto', sans-serif;
-    --biggest-font-size: 1.5rem;
-    --big-font-size: 1.5rem;
-    --normal-font-size: .938rem;
-    --smaller-font-size: .75rem;
-    /*========== Font weight ==========*/
-    --font-medium: 500;
-    --font-bold: 700;
-}
-
 body {
     font-family: Roboto;
 }
@@ -63,7 +50,7 @@ span {
     margin-bottom: 3rem;
     font-size: 4rem;
 }
-
+/* '---Buttons em geral---' */
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -71,6 +58,7 @@ span {
     color: #222;
     font-size: 1.7rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
     cursor: pointer;
 }
 
