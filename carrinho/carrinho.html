@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!-- 'NAV LIST' -->
+    <!-- Barra de Navegação -->
     <section id="header" class="header">
         <a href="#" class="logo"> L'odeur Unique</a>
         <nav class="navbar">
@@ -19,63 +19,8 @@
             <a href="#product-id">Produtos</a>
             <a href="../index.html">Contato</a>
         </nav>
-        <div class="icons">
-         
-            <a href="#cart-id"></a>
-        </div>
     </section>
 
-    <section class="product-container">
-        <h2 class="section-title" id="product-id">Produtos</h2>
-        <!-- Conteúdo -->
-        <div class="product-content">
-            <!-- 1 -->
-            <div class="product-box">
-                <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
-                <h2 class="product-title">LA NUIT TRÉSOR</h2>
-                <span class="price">R$298,00</span>
-                <a class="fas fa-shopping-cart"></a>
-            </div>
-            <!-- 2 -->
-            <div class="product-box">
-                <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
-                <h2 class="product-title">LA NUIT TRÉSOR</h2>
-                <span class="price">R$298,00</span>
-                <a class="fas fa-shopping-cart"></a>
-            </div>
-            <!-- 3 -->
-            <div class="product-box">
-                <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
-                <h2 class="product-title">LA NUIT TRÉSOR</h2>
-                <span class="price">R$298,00</span>
-                <a class="fas fa-shopping-cart"></a>
-            </div>
-        </div>
-        <div class="product-content">
-            <!-- 4 -->
-            <div class="product-box">
-                <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
-                <h2 class="product-title">LA NUIT TRÉSOR</h2>
-                <span class="price">R$298,00</span>
-                <a class="fas fa-shopping-cart"></a>
-            </div>
-            <!-- 5 -->
-            <div class="product-box">
-                <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
-                <h2 class="product-title">LA NUIT TRÉSOR</h2>
-                <span class="price">R$298,00</span>
-                <a class="fas fa-shopping-cart"></a>
-            </div>
-            <!-- 6 -->
-            <div class="product-box">
-                <img decoding="async" src="style/img/perfume-teste.webp" alt="" class="product-img">
-                <h2 class="product-title">LA NUIT TRÉSOR</h2>
-                <span class="price">R$298,00</span>
-                <a class="fas fa-shopping-cart"></a>
-            </div>
-        </div>
-
-    </section>
     <!-- Carrinho -->
     <section class="cart" id="cart-id">
         <h2 class="section-title">Carrinho</h2>
@@ -90,49 +35,196 @@
             </thead>
 
             <tbody>
+                <!-- 1 -->
                 <tr class="cart-product">
                     <td class="product-identification">
-                        <img class="cart-img" decoding="async" src="style/img/perfume-teste.webp" alt="">
-                        <strong class="cart-product-title">LA NUIT TRÉSOR</strong>
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/1product.webp" alt="">
+                        <strong class="cart-product-title">LANCÔME LA NUIT TRÉSOR</strong>
                     </td>
                     <td>
-                        <span class="cart-price">R$298,00</span>
+                        <span class="cart-price">R$298.00</span>
                     </td>
                     <td>
-                        <input class="product-quantity" type="number" value="1" min="0" max="10" maxlength="2"
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
                             onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
                             onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
-                        <button type="button" class="fa-solid fa-trash"></i>
+                        <button type="menu" class="fa-solid fa-trash"></button>
                     </td>
                 </tr>
+                <!-- 2 -->
                 <tr class="cart-product">
                     <td class="product-identification">
-                        <img class="cart-img" decoding="async" src="style/img/perfume-teste.webp" alt="">
-                        <strong class="cart-product-title">LA NUIT TRÉSOR</strong>
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/Yparfum.png" alt="">
+                        <strong class="cart-product-title">Y LE PARFUM</strong>
                     </td>
                     <td>
-                        <span class="cart-price">R$298,00</span>
+                        <span class="cart-price">R$1198.00</span>
                     </td>
                     <td>
-                        <input class="product-quantity" type="number" value="1" min="0" max="10" maxlength="2"
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
                             onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
                             onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
-                        <button type="button" class="fa-solid fa-trash"></i>
+                        <button type="menu" class="fa-solid fa-trash"></button>
                     </td>
                 </tr>
+                <!-- 3 -->
                 <tr class="cart-product">
                     <td class="product-identification">
-                        <img class="cart-img" decoding="async" src="style/img/perfume-teste.webp" alt="">
-                        <strong class="cart-product-title">LA NUIT TRÉSOR</strong>
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/ck.png" alt="">
+                        <strong class="cart-product-title">CK EUPHORIA</strong>
                     </td>
                     <td>
-                        <span class="cart-price">R$298,00</span>
+                        <span class="cart-price">R$567.00</span>
                     </td>
                     <td>
-                        <input class="product-quantity" type="number" value="1" min="0" max="10" maxlength="2"
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
                             onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
                             onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
-                        <button type="button" class="fa-solid fa-trash"></i>
+                        <button type="menu" class="fa-solid fa-trash"></button>
+                    </td>
+                </tr>
+                <!-- 4 -->
+                <tr class="cart-product">
+                    <td class="product-identification">
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/sauvage.png" alt="">
+                        <strong class="cart-product-title">SAUVAGE ELIXIR</strong>
+                    </td>
+                    <td>
+                        <span class="cart-price">R$1589.00</span>
+                    </td>
+                    <td>
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
+                            onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                        <button type="menu" class="fa-solid fa-trash"></button>
+                    </td>
+                </tr>
+                <!-- 5 -->
+                <tr class="cart-product">
+                    <td class="product-identification">
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/DG1.jpeg.jpg" alt="">
+                        <strong class="cart-product-title">DEVOTION DOLCE E GABBANA</strong>
+                    </td>
+                    <td>
+                        <span class="cart-price">R$648.99</span>
+                    </td>
+                    <td>
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
+                            onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                        <button type="menu" class="fa-solid fa-trash"></button>
+                    </td>
+                </tr>
+                <!-- 6 -->
+                <tr class="cart-product">
+                    <td class="product-identification">
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/mi.png" alt="">
+                        <strong class="cart-product-title">1 MILLIO</strong>
+                    </td>
+                    <td>
+                        <span class="cart-price">R$709.99</span>
+                    </td>
+                    <td>
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
+                            onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                        <button type="menu" class="fa-solid fa-trash"></button>
+                    </td>
+                </tr>
+                <!-- 7 -->
+                <tr class="cart-product">
+                    <td class="product-identification">
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/Azarro1.png" alt="">
+                        <strong class="cart-product-title">WANTED AZARRO</strong>
+                    </td>
+                    <td>
+                        <span class="cart-price">R$560,00</span>
+                    </td>
+                    <td>
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
+                            onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                        <button type="menu" class="fa-solid fa-trash"></button>
+                    </td>
+                </tr>
+                <!-- 8 -->
+                <tr class="cart-product">
+                    <td class="product-identification">
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/polo1.png" alt="">
+                        <strong class="cart-product-title">RALPH LAUREN</strong>
+                    </td>
+                    <td>
+                        <span class="cart-price">R$770,00</span>
+                    </td>
+                    <td>
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
+                            onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                        <button type="menu" class="fa-solid fa-trash"></button>
+                    </td>
+                </tr>
+                <!-- 9 -->
+                <tr class="cart-product">
+                    <td class="product-identification">
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/_belle1 (1).png" alt="">
+                        <strong class="cart-product-title">LA VIE</strong>
+                    </td>
+                    <td>
+                        <span class="cart-price">R$699,0</span>
+                    </td>
+                    <td>
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
+                            onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                        <button type="menu" class="fa-solid fa-trash"></button>
+                    </td>
+                </tr>
+                <!-- 10 -->
+                <tr class="cart-product">
+                    <td class="product-identification">
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/VICTORY1 (1).png" alt="">
+                        <strong class="cart-product-title">INVICTUS VICTORY</strong>
+                    </td>
+                    <td>
+                        <span class="cart-price">R$770,00</span>
+                    </td>
+                    <td>
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
+                            onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                        <button type="menu" class="fa-solid fa-trash"></button>
+                    </td>
+                </tr>
+                <!-- 11 -->
+                <tr class="cart-product">
+                    <td class="product-identification">
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/chloé1 (1).png" alt="">
+                        <strong class="cart-product-title">CHLOÉ NATURELLE</strong>
+                    </td>
+                    <td>
+                        <span class="cart-price">R$580,00</span>
+                    </td>
+                    <td>
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
+                            onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                        <button type="menu" class="fa-solid fa-trash"></button>
+                    </td>
+                </tr>
+                <!-- 12 -->
+                <tr class="cart-product">
+                    <td class="product-identification">
+                        <img class="cart-img" decoding="async" src="../../produtos/style/img/erba1 (1).png" alt="">
+                        <strong class="cart-product-title">ERBA PURA</strong>
+                    </td>
+                    <td>
+                        <span class="cart-price">R$2500,00</span>
+                    </td>
+                    <td>
+                        <input class="product-quantity" type="number" value="0" min="0" max="10" maxlength="2"
+                            onkeyup="if(parseInt(this.value)>10){ this.value =10; return false; }"
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57'></input>
+                        <button type="menu" class="fa-solid fa-trash"></button>
                     </td>
                 </tr>
             </tbody>
@@ -141,13 +233,13 @@
                 <tr>
                     <td colspan="3" class="total-price">
                         <strong>Total</strong>
-                        <span>R$298,00</span>
+                        <span>R$0.00</span>
                     </td>
                 </tr>
             </tfoot>
         </table>
-        <button class="purchase" type="button">Comprar</button>
+        <a href="carrinho.html"><button class="purchase" type="button" id="purchase-update"onclick="alert('Compra realizada com sucesso')">Comprar</button></a>
     </section>
 </body>
-
+<script src="carrinho.js"></script>
 </html>
