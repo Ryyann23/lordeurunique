@@ -223,3 +223,35 @@ td button:hover {
     font-size: 2rem;
     cursor: pointer;
 }
+@media screen and (max-width: 1020px){
+    .header{
+        display: none;
+    }
+    .cart-table{
+        width: 300px;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .cart-price{
+        margin-left: 5px;
+    }
+    .second-collumn, p{
+        margin-left: 20px;
+    }
+    .product-identification{
+        display: grid;
+        margin-left: -20px;
+    }
+    .table-head-item{
+        width: 200px;
+    }
+    td{
+        display: flex-box;
+    }
+    .product-quantity{
+        margin-left: 30px;
+    }
+    .fa-trash{
+        margin-left: 35px;
+    }
+}

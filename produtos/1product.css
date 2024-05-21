@@ -490,8 +490,11 @@ main {
     padding-top: -100px;
     padding-left: 20px;
     padding-right: 20px; 
-    margin-bottom: 100px;
-    padding-bottom: 70px;
+    margin-bottom: 60px;
+    padding-bottom: 80px;
+  }
+  .data{
+    margin-top: 5px;
   }
   .price__title{
     font-size: 30px;
