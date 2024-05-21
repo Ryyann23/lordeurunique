@@ -241,6 +241,7 @@ span {
     line-height: 2;
     color: #666;
     font-size: 1.4rem;
+    font-family: roboto;
 }
 
 .about .content .icons-container {
