@@ -11,17 +11,23 @@
 <body>
 
 <!-- 'NAVBAR' -->
-<section id="header" class="header">
-    <a href="#home" class="logo"> L'odeur Unique</a>
-    <nav class="navbar">
-        <a href="#home">Início</a>
-        <a href="#about">Sobre</a>
-        <a href="#shop">Produtos</a>
-        <a href="#message">Contato</a>
+<header>
+    <div class="navbar-mobile">
+    <a id="logo" href="logo"> L'odeur Unique</a>
+    <nav id="nav">
+        <button id="btn-mobile">Menu
+            <span id="hamburger"></span>
+        </button>
+        <ul id="menu">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#shop">Produtos</a></li>
+            <li><a href="#message">Contato</a></li>
+            <li><a href="carrinho/carrinho.html"><div class="cart-icon"></div></a></li>
+        </ul>
     </nav>
-
-    <a href="carrinho/carrinho.html"><div class="cart-icon"></div></a>
-</section>
+    </div>
+</header>
 
 <!-- 'CARROSSEL' -->
 <section class="home" id="home">
@@ -361,4 +367,5 @@
 
 </body>
 <script src="main.js"></script>
+<script src="menumobile.js"></script>
 </html>
