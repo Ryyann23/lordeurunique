@@ -35,3 +35,7 @@ function prevSlider() {
 
 btnNext.addEventListener('click', nextSlider)
 btnPrev.addEventListener('click', prevSlider)
+
+setInterval(function auto() {
+    nextSlider()
+  }, 5000)
