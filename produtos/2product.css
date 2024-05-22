@@ -5,6 +5,9 @@
         padding-right: 100px;
         margin-top: -50px;
     }
+    .price{
+      margin-bottom: -3px;
+  }
     .price__title{
         margin-left: -10px;
       }

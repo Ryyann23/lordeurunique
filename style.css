@@ -13,7 +13,6 @@ body {
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all .2s linear;
 }
 
@@ -68,13 +67,6 @@ span {
     color: #fff;
 }
 
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(-4rem) scale(0.4);
-    }
-}
 /* ---NAVBAR--- */
 .header {
     position: sticky;
@@ -183,7 +175,6 @@ span {
 .marcas .box-container {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
     gap: 2rem;
 }
 
@@ -224,6 +215,7 @@ span {
 
 .about .content {
     flex: 1 1 42rem;
+    margin-top: 105px;
 }
 
 .about .content .box {

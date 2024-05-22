@@ -485,6 +485,9 @@ main {
     margin-left: -50px;
     margin-top: -10px;
   }
+  .price{
+    margin-bottom: -3px;
+}
   .info{
     margin-top: -210px;
     padding-top: -100px;
