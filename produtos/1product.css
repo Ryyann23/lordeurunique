@@ -124,7 +124,7 @@ a {
   row-gap: 3.5rem;
   grid-template-rows: repeat(2, max-content);
   overflow: hidden;
-  margin-top: -65px;
+  margin-top: -45px;
   padding-top: 50px;
 }
 
