@@ -63,76 +63,46 @@ html::-webkit-scrollbar-thumb {
     }
 }
 
-#logo {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
-    margin-left: 30px;
-}
-
-header {
-    box-sizing: border-box;
-    height: 90px;
-    padding: 1rem;
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #ffffff;
+    padding: 1.5rem 9%;
+    height: 65px;
+    font-family: 'Roboto', sans-serif;
 }
 
-.navbar-mobile {
-    display: flex;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-.navbar-mobile, #logo {
-    font-size: 28px;
-    margin-top: 8px;
-    margin-left: 25px;
-    margin-bottom: 10px;
-}
-
-#menu {
-    display: flex;
-    list-style: none;
-    gap: .5rem;
-    align-items: center;
-    justify-content: space-around;
-    align-items: center;
+.header .logo {
     font-size: 25px;
-    margin-top: -10px;
-    margin-left: 70px;
+    color: #222;
+    font-weight: bolder;
 }
 
-#nav {
-    width: 1000px;
+.header .logo i {
+    color: #222;
 }
 
-#menu a {
-    display: block;
-    padding: .5rem;
-    font-size: 18px;
+.navbar {
+    margin-right: 24.1rem;
 }
 
-#btn-mobile {
-    display: none;
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 17.5px;
+    color: #222;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-.cart-icon {
-    width: 80px;
-    height: 70px;
-    background-image: url(style/img/cart-icon.png);
-    background-size: contain;
-    transition: 0.75s;
-    margin-right: -200px;
-    margin-top: -5px;
-}
-
-.cart-icon:hover {
-    background-image: url(style/img/cart-icon-click.png);
-    transition: 0.75s;
+.header .navbar a:hover {
+    color: #222;
 }
 
 /*Carrinho*/
@@ -283,99 +253,5 @@ td button:hover {
     }
     .fa-trash{
         margin-left: 35px;
-    }
-    #header {
-        display: inline-block;
-    }
-
-    #header, #logo{
-        font-size: 25px;
-        font-weight: bold;
-        position: absolute;
-        font-family: 'Roboto', sans-serif;
-        padding: 0;
-        margin-left: -15px;
-    }
-
-    #menu {
-        display: block;
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        right: 0px;
-        background: #e7e7e7;
-        height: 0px;
-        transition: .6s;
-        z-index: 99999;
-        visibility: hidden;
-        overflow-y: hidden;
-        margin-top: 5px;
-    }
-
-    #nav{
-        margin-left: 190px;
-    }
-    #nav.active #menu {
-        position: absolute;
-        height: calc(100vh - 70vh);
-        visibility: visible;
-        overflow-y: auto;
-    }
-
-    #menu a {
-        padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
-    }
-
-    #btn-mobile {
-        display: flex;
-        padding: .5rem 1rem;
-        font-size: 20px;
-        border: none;
-        background: none;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        gap: .5rem;
-        margin-left: 120px;
-        margin-top: 5px;
-    }
-
-    #hamburger {
-        display: inline-bolck;
-        border-top: 2px solid;
-        width: 20px;
-        margin-top: 6px;
-
-    }
-
-    #hamburger::after,
-    #hamburger::before {
-        width: 20px;
-        height: 2px;
-        background-color: currentColor;
-        content: '';
-        display: block;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-
-    #nav.active #hamburger {
-        border-top-color: transparent;
-    }
-
-    #nav.active #hamburger::before {
-        transform: rotate(-135deg);
-    }
-
-    #nav.active #hamburger::after {
-        transform: rotate(135deg);
-        top: -7px;
-    }
-
-    #home {
-        margin-top: 50px;
     }
 }
